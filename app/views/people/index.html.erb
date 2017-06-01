@@ -1,0 +1,15 @@
+<h1>List of Amazing People</h1>
+<hr />
+
+<h1> People </h1>
+<% @people.each do |person| %>
+  <h2><%= person.name %></h2>
+  <%= link_to 'Show person', person_path(person) %>
+  <% end %>
+
+  <!--person means the current person and class we're working with
+
+
+<!-- erb tags to use ruby
+ loop through list of people. 
+ each 
